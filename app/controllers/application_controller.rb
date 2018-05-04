@@ -34,6 +34,7 @@ class ApplicationController < Sinatra::Base
 		if user != nil
 			redirect '/success'
 		else
+			redirect '/failure'
 	end
 
 	get "/success" do
